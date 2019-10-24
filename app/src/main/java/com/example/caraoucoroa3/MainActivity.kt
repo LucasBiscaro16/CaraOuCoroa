@@ -1,11 +1,9 @@
-package com.example.tarefas
+package com.example.caraoucoroa3
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_lista.*
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,14 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-           image_jogar.setOnClickListener {
-               val intent = Intent(this.applicationContext,lista_view::class.java)
-
-               startActivity(intent)
-           }
+        img_jogar.setOnClickListener{
+            val intent = Intent (this,Resultado2Activity::class.java)
+            startActivity(intent)
         }
     }
-
-
-
+}
